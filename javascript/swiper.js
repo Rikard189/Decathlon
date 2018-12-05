@@ -4,4 +4,8 @@ var swiper = new Swiper('.swiper-container', {
        prevEl: '.swiper-button-prev',
      },
      loop: true,
+     autoplay: {
+       delay: 3000,
+       disableOnInteraction: false,
+     }
    });
