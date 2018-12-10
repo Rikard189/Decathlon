@@ -1,6 +1,55 @@
-.container-m3 {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.products {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 10px;
+}
+
+.product-text-m3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 6rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.product-text-m3 h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.column {
+  position: relative;
+}
+
+.vertical {
+  flex: 25%;
+  width: 458px;
+
+}
+
+.horizontal {
+  flex: 50%;
+  width: 948px;
+}
+
+.products img {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1025px)
+{
+  .horizontal {
+    width: 783px;
+  }
+
+  .vertical {
+    width: 375.5px;
+  }
+
+  .products {
+    margin-left: 50px;
+  }
 }
